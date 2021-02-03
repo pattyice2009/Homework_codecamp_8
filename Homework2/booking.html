@@ -1,0 +1,147 @@
+้
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <style>
+        .detail {
+            background-color: rgb(252, 247, 247);
+            height: 300px;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 5px auto 5px auto;
+        }
+
+        .line2 {
+            display: inline-block;
+        }
+
+        .From1 {
+            font-size: 18px;
+            width: 150px;
+            display: inline-block;
+            margin: 2px 40px 10px 0;
+        }
+
+        .To1 {
+
+            font-size: 18px;
+            width: 150px;
+            display: inline-block;
+            margin: 2px 40px 10px 0;
+        }
+
+        .Departing1 {
+
+            font-size: 18px;
+            width: 150px;
+            display: inline-block;
+        }
+
+        .Returning1 {
+
+            font-size: 18px;
+            width: 150px;
+            display: inline-block;
+        }
+
+        .Adult1 {
+
+            font-size: 18px;
+            width: 30px;
+            margin:  2px 10px 10px 0;
+            display: inline-block;
+        }
+
+        .Child1 {
+
+            font-size: 18px;
+            width: 30px;
+            margin:  2px 10px 10px 20;
+            display: inline-block;
+        }
+
+        .Infant1 {
+
+            font-size: 18px;
+            width: 30px;
+            margin: 2px 10px 10px 20;
+            display: inline-block;
+        }
+
+        .Currency1 {
+
+            font-size: 18px;
+            width: 30px;
+            margin:  2px 10px 10px 20;
+            display: inline-block;
+        }
+        #search{
+         background-color: orangered;
+         color: white;
+         width: 100px;
+         height: 40px;
+        }
+       
+    </style>
+</head>
+<body>
+    <form>
+        <div class="Detail">
+            <div class="line1">
+                <div class="From1">
+                    <label for="Flying">Flying form</label><br>
+                    <select name="Fly" id="Fly">
+                        <option value="karacht">Karacht,Pakist</option>
+                    </select>
+                </div>
+                <div class="To1">
+                    <label for="To">To</label><br>
+                    <select name="T" id="T">
+                        <option value="islamabad">Islamabad,Pal</option>
+                    </select>
+                </div>
+            </div>
+            <div class="line2">
+                <div class="Departing1">
+                    <label for="Departing">Departing</label><br>
+                    <input type="date" id="Departing" name="Departing" style=" background-color: #DCDCDC;
+            color: black;">
+                </div>
+                <div class="Returning1">
+                    <label for="Returning">Returning</label><br>
+                    <input type="date" id="Returning" name="Returning">
+                </div>
+            </div>
+            <div class="line3"></div>
+            <div class="Adult1">
+                <label for="Adult">Adult</label><br>
+                <input type="number" id="adult" name="adult" value="1" style="width: 50px ;">
+            </div>
+            <div class="Child1">
+                <label for="Child">Child</label><br>
+                <input type="number" id="Child" name="Child"value="0"style="width: 50px ;" >
+            </div>
+            <div class="Infant1">
+                <label for="Infant">Infant</label><br>
+                <input type="number" id="Infant" name="Infant"value="0" style="width: 50px ;">
+            </div>
+            <div class="Currency1">
+                <label for="Currency" style="color: red;">Currency</label><br>
+                <select id="currency" name="currency">
+                    <option value="thb">THB</option>
+                    <option value="usd">USD</option>
+                </select>
+            </div>
+            <div class="button">
+            <input type="submit" id="search" value="SEARCH">
+        </div>
+        </div>
+        </div>
+    </form>
+</body>
+
+</html>
